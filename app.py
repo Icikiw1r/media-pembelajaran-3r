@@ -24,12 +24,12 @@ PEMETAAN_KATEGORI = {
     'kaca': {'kategori': 'ANORGANIK', 'warna': '🔵', 'tips': 'Hati-hati pecah, pisahkan agar aman saat diserahkan ke petugas kebersihan.'}
 }
 
-# Memuat model YOLO format ONNX
+# Memuat model YOLO secara aman dengan sistem Cache Streamlit
 @st.cache_resource
 def load_model():
     try:
-        # UBAH NAMA FILE DI SINI MENJADI .onnx
-        return YOLO('best.onnx') 
+        # TAMBAHKAN task='classify' DI SINI
+        return YOLO('best.onnx', task='classify')
     except Exception as e:
         st.error("❌ File model 'best.onnx' tidak ditemukan di direktori ini.")
         return None
@@ -55,13 +55,15 @@ image_data = None
 if opsi_input == "Ambil Foto Langsung (Kamera Device)":
     camera_img = st.camera_input("Arahkan sampah ke kamera laptop/HP Anda:")
     if camera_img is not None:
-        image_data = Image.open(camera_img)
+        # TAMBAHKAN .convert('RGB') DI SINI
+        image_data = Image.open(camera_img).convert('RGB')
 
 # Logika Pemrosesan Unggah File
 else:
     uploaded_file = st.file_uploader("Pilih gambar sampah (Format: JPG, JPEG, PNG):", type=["jpg", "jpeg", "png"])
     if uploaded_file is not None:
-        image_data = Image.open(uploaded_file)
+        # TAMBAHKAN .convert('RGB') DI SINI
+        image_data = Image.open(uploaded_file).convert('RGB')
 
 # Proses Deteksi AI jika gambar tersedia
 if image_data is not None:
