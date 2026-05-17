@@ -15,13 +15,13 @@ st.set_page_config(
 PEMETAAN_KATEGORI = {
     'baterai': {'kategori': 'B3 (BERBAHAYA & BERACUN)', 'warna': '🔴', 'tips': 'Kumpulkan terpisah dan serahkan ke tempat pembuangan khusus limbah B3/DLH.'},
     'organik': {'kategori': 'ORGANIK', 'warna': '🟢', 'tips': 'Dapat diolah menjadi pupuk kompos atau pakan maggot.'},
-    'kardus': {'kategori': 'ANORGANIK', 'warna': '🔵', 'tips': 'Setorkan ke Bank Sampah terdekat untuk didaur ulang.'},
-    'baju': {'kategori': 'ANORGANIK', 'warna': '🔵', 'tips': 'Donasikan jika layak pakai atau kreasikan menjadi kain lap/kerajinan.'},
-    'besi': {'kategori': 'ANORGANIK', 'warna': '🔵', 'tips': 'Setorkan ke pengepul rongsokan atau Bank Sampah untuk dilebur kembali.'},
-    'kertas': {'kategori': 'ANORGANIK', 'warna': '🔵', 'tips': 'Hindari kondisi basah, kumpulkan untuk didaur ulang menjadi kertas baru.'},
-    'plastik': {'kategori': 'ANORGANIK', 'warna': '🔵', 'tips': 'Batasi penggunaan (Reduce) atau bersihkan untuk wadah guna ulang (Reuse).'},
-    'sepatu': {'kategori': 'ANORGANIK', 'warna': '🔵', 'tips': 'Perbaiki jika rusak ringan atau salurkan ke badan daur ulang tekstil.'},
-    'kaca': {'kategori': 'ANORGANIK', 'warna': '🔵', 'tips': 'Hati-hati pecah, pisahkan agar aman saat diserahkan ke petugas kebersihan.'}
+    'kardus': {'kategori': 'ANORGANIK', 'warna': '🟡', 'tips': 'Setorkan ke Bank Sampah terdekat untuk didaur ulang.'},
+    'baju': {'kategori': 'ANORGANIK', 'warna': '🟡', 'tips': 'Donasikan jika layak pakai atau kreasikan menjadi kain lap/kerajinan.'},
+    'besi': {'kategori': 'ANORGANIK', 'warna': '🟡', 'tips': 'Setorkan ke pengepul rongsokan atau Bank Sampah untuk dilebur kembali.'},
+    'kertas': {'kategori': 'ANORGANIK', 'warna': '🟡', 'tips': 'Hindari kondisi basah, kumpulkan untuk didaur ulang menjadi kertas baru.'},
+    'plastik': {'kategori': 'ANORGANIK', 'warna': '🟡', 'tips': 'Batasi penggunaan (Reduce) atau bersihkan untuk wadah guna ulang (Reuse).'},
+    'sepatu': {'kategori': 'ANORGANIK', 'warna': '🟡', 'tips': 'Perbaiki jika rusak ringan atau salurkan ke badan daur ulang tekstil.'},
+    'kaca': {'kategori': 'ANORGANIK', 'warna': '🟡', 'tips': 'Hati-hati pecah, pisahkan agar aman saat diserahkan ke petugas kebersihan.'}
 }
 
 # Memuat model YOLO secara aman dengan sistem Cache Streamlit
