@@ -30,7 +30,7 @@ PEMETAAN_KATEGORI = {
 @st.cache_resource
 def load_model():
     try:
-        return YOLO('best.onnx', task='classify')
+        return YOLO('best (2).onnx', task='classify')
     except Exception as e:
         st.error("❌ File model 'best.onnx' tidak ditemukan di direktori ini.")
         return None
